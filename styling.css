@@ -43,54 +43,34 @@
   }
   
   /* WRITE YOUR CODE BELOW HERE */
-  
-  /* font imports */
-  
-  /*
-  
-  Lovato light font obtained from fontspring.com,
-  originally created by Philatype
-  See https://www.fontspring.com/fonts/philatype/lovato
-  
-  Josefin slab bold obtained from fontsquirrel.com,
-  originally created by Typemade
-  See https://www.fontsquirrel.com/fonts/josefin-slab
-  
-  */
-  
+
   @font-face {
-      font-family: 'lovatolight';
-      src: url('fonts/Lovato-Light-webfont.eot');
-      src: url('fonts/Lovato-Light-webfont.eot?#iefix') format('embedded-opentype'),
-           url('fonts/Lovato-Light-webfont.woff2') format('woff2'),
-           url('fonts/Lovato-Light-webfont.woff') format('woff'),
-           url('fonts/Lovato-Light-webfont.ttf') format('truetype'),
-           url('fonts/Lovato-Light-webfont.svg#lovatolight') format('svg');
-      font-weight: normal;
-      font-style: normal;
-  }
-  
-  @font-face {
-      font-family: 'josefin_slabbold';
-      src: url('fonts/JosefinSlab-Bold.ttf');
-      src: url('fonts/JosefinSlab-Bold.ttf') format('embedded-opentype'),
-           url('fonts/JosefinSlab-Bold.ttf') format('woff2'),
-           url('fonts/JosefinSlab-Bold.ttf') format('woff'),
-           url('fonts/JosefinSlab-Bold.ttf') format('truetype'),
-           url('fonts/JosefinSlab-Bold.ttf') format('svg');
-      font-weight: normal;
-      font-style: normal;
-  }
-  
-  /* typography stuff */
+    font-family: 'FirstFont';
+    src: url('fonts/AlexBrush-Regular.woff2') format('woff2'),
+         url('fonts/AlexBrush-Regular.woff') format('woff'),
+         url('fonts/AlexBrush-Regular.ttf') format('truetype'),
+         url('fonts/AlexBrush-Regular.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'SecondFont';
+    src: url('fonts/Cantarell-Regular.woff2') format('woff2'),
+         url('fonts/Cantarell-Regular.woff') format('woff'),
+         url('fonts/Cantarell-Regular.ttf') format('truetype'),
+         url('fonts/Cantarell-Regular.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+    }
   
   html {
-    font-family: lovatolight, serif;
+    font-family: FirstFont, serif;
     font-size: 10px;
   }
   
   h1, h2 {
-    font-family: josefin_slabbold, sans-serif;
+    font-family: SecondFont, sans-serif;
     letter-spacing: 2px;
   }
   
@@ -113,8 +93,6 @@
     letter-spacing: 0.5px;
     word-spacing: 3px;
   }
-  
-  /* Link styling */
   
   a {
     outline: none;
@@ -142,9 +120,6 @@
                  0px 0px 4px black;
   }
   
-  /* lists: extra margin top and bottom to make it
-  always have the same spacing as with paragraphs */
-  
   ul, ol {
     margin: 1.6rem 0;
   }
@@ -156,8 +131,6 @@
   ol {
     list-style-type: lower-latin;
   }
-  
-  /* nav menu */
   
   nav ul {
     padding-left: 0;
